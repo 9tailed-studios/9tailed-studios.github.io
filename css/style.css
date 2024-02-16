@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    --primary: #ff9751;
+    --dark: #2F4858;
+    --light: #b9a89a;
+}
+
+body {
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-color: var(--dark);
+    color: white;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+
+    height: 90px;
+    padding: 0 15%;
+}
+
+header > h1 {
+    margin: 0;
+}
+
+header > .spacer {
+    flex-grow: 1;
+}
+
+nav {
+    display: block;
+}
+
+nav > ul {
+    position: relative;
+    background-color: var(--dark);
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 14pt;
+    list-style-type: none;
+}
+
+nav > ul > li {
+    cursor: pointer;
+    display: inline;
+}
+
+nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+    transition: color .25s ease-in-out;
+}
+
+nav > ul > li:hover {
+    color: var(--primary);
+}
+
+nav > ul > li:hover > a {
+    color: var(--primary);
+}
+
+nav > ul > li:not(:last-child) {
+    margin-right: 30px;
+}
+
+ul.dropdown {
+    top: calc(100% + 7px);
+    min-width: 125px;
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--dark);
+}
+
+ul.dropdown > li {
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+ul.dropdown > li:hover {
+    background-color: var(--primary);
+}
+
+ul.dropdown > li:not(:last-child) {
+    border-bottom: 1px solid var(--light);
+}
+
+nav > ul > li > ul.dropdown {
+    border: 1px solid var(--light);
+    position: absolute;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .25s linear, opacity .25s ease-in-out;
+}
+
+nav > ul > li:hover > ul.dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+
+main {
+    margin: 20px 15%;
+}
+
+article.construction {
+    text-align: center;
+    padding: 15px;
+    border-radius: 7px;
+
+    background: repeating-linear-gradient(-45deg, #f2d001, #f2d001 10px, black 10px, black 20px);
+}
+
+article.construction > h1 {
+    background-color: white;
+    border-radius: 7px;
+    display: inline-block;
+    padding: 7px;
+}
