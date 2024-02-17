@@ -1,0 +1,35 @@
+header {
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+nav {
+    margin-top: 10px;
+    width: 100%;
+}
+
+nav > ul > li {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav > ul > li:not(:last-child) {
+    border-bottom: 1px solid var(--light);
+}
+
+nav > ul > li > ul.dropdown {
+    position: relative;
+    display: none;
+    margin-top: 10px;
+    border-top: 1px solid var(--light);
+}
+
+nav > ul > li > ul.dropdown > li:last-child {
+    margin-bottom: -10px; /* negate bottom padding from parent */
+}
+
+nav > ul > li:hover > ul.dropdown {
+    display: block;
+}

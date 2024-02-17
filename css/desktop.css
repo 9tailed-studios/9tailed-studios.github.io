@@ -1,0 +1,20 @@
+header {
+    padding: 2rem 10%;
+}
+
+nav > ul > li {
+    padding-bottom: 10px;
+}
+
+nav > ul > li > ul.dropdown {
+    border: 1px solid var(--light);
+    top: calc(100% + 10px);
+}
+
+nav > ul > li > ul.dropdown > li {
+    padding: 10px;
+}
+
+nav > ul > li:not(:last-child) {
+    margin-right: 30px;
+}

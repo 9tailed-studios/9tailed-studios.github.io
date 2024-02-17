@@ -21,9 +21,6 @@ header {
 
     display: flex;
     align-items: center;
-
-    height: 90px;
-    padding: 0 15%;
 }
 
 header > h1 {
@@ -67,10 +64,6 @@ nav > ul > li:hover > a {
     color: var(--primary);
 }
 
-nav > ul > li:not(:last-child) {
-    margin-right: 30px;
-}
-
 ul.dropdown {
     top: calc(100% + 7px);
     min-width: 125px;
@@ -80,7 +73,7 @@ ul.dropdown {
 }
 
 ul.dropdown > li {
-    padding: 10px;
+    padding: 10px 0;
     cursor: pointer;
     color: white;
 }
@@ -94,9 +87,7 @@ ul.dropdown > li:not(:last-child) {
 }
 
 nav > ul > li > ul.dropdown {
-    border: 1px solid var(--light);
     position: absolute;
-    z-index: 1;
     visibility: hidden;
     opacity: 0;
     transition: visibility .25s linear, opacity .25s ease-in-out;
@@ -108,7 +99,7 @@ nav > ul > li:hover > ul.dropdown {
 }
 
 main {
-    margin: 20px 15%;
+    margin: 20px 10%;
 }
 
 article.construction {
