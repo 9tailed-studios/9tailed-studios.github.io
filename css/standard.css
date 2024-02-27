@@ -24,6 +24,18 @@ html, body {
     background-color: var(--dark);
 }
 
+a {
+    color: var(--primary);
+}
+
+a:active {
+    color: var(--text-light);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 header {
     background-color: var(--light);
     color: white;
@@ -137,6 +149,10 @@ h1.center {
     text-align: center;
 }
 
+h1.title {
+    font-size: 36pt;
+}
+
 article.construction {
     text-align: center;
     padding: 15px;
@@ -162,6 +178,7 @@ article {
     margin-top: 15px;
 
     position: relative;
+    font-weight: lighter;
 }
 
 article:not(.no-animate) {
@@ -174,14 +191,15 @@ article:not(.block) {
     display: flex;
 }
 
-article section h3 {
+article h3, article h2, article h1 {
     font-weight: normal;
     margin-bottom: 0;
     color: var(--primary);
+    padding: 0 1rem;
 }
 
 article > h1 {
-    padding: 0 1em;
+    padding: 0 1rem;
     margin: 0;
 }
 
