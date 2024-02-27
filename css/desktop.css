@@ -1,0 +1,65 @@
+header {
+    padding: 2rem 10%;
+}
+
+footer {
+    margin-top: 6rem;
+}
+
+main {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+main > h1 {
+    font-size: 36pt;
+}
+
+nav > ul > li {
+    padding-bottom: 10px;
+}
+
+nav > ul > li > ul.dropdown {
+    border: 1px solid var(--mid);
+    top: calc(100% + 10px);
+}
+
+nav > ul > li > ul.dropdown > li {
+    padding: 10px;
+}
+
+nav > ul > li:not(:last-child) {
+    margin-right: 30px;
+}
+
+ul.dropdown > li:not(:last-child) {
+    border-bottom: 1px solid var(--mid);
+}
+
+article {
+    flex-direction: row;
+    align-items: end;
+    min-height: 100px;
+}
+
+article > section.title {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+article > section.preview {
+    flex-basis: 50%;
+}
+
+article > section.title > img {
+    min-width: 250px;
+    min-height: 250px;
+}
+
+article > p {
+    font-size: 16pt;
+}
+
+article > p:not(:only-child) {
+    flex-basis: 70%;
+}
