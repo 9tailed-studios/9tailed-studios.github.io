@@ -63,3 +63,8 @@ article > p {
 article > p:not(:only-child) {
     flex-basis: 70%;
 }
+
+section.split {
+    display: flex;
+    flex-direction: row;
+}

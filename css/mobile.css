@@ -53,3 +53,9 @@ article section.title {
 article section.title > img {
     max-width: 100%;
 }
+
+section.split {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

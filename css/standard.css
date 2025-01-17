@@ -2,10 +2,12 @@
 
 * {
     --primary: #f5bc73;
+    --background: white;
     --dark: #336687;
     --light: #7ea5bf;
     --mid: #4f7e9c;
     --text-light: #ddd;
+    --text-dark: #111;
 }
 
 div#page {
@@ -136,6 +138,10 @@ h1.center {
     text-align: center;
 }
 
+h1.title {
+    font-size: 36pt;
+}
+
 article.construction {
     text-align: center;
     padding: 15px;
@@ -161,6 +167,7 @@ article {
     margin-top: 15px;
 
     position: relative;
+    font-weight: lighter;
 }
 
 article:not(.no-animate) {
@@ -173,14 +180,15 @@ article:not(.block) {
     display: flex;
 }
 
-article section h3 {
+article h3, article h2, article h1 {
     font-weight: normal;
     margin-bottom: 0;
     color: var(--primary);
+    padding: 0 1rem;
 }
 
 article > h1 {
-    padding: 0 1em;
+    padding: 0 1rem;
     margin: 0;
 }
 
@@ -191,6 +199,10 @@ article p {
 
 article > section.preview > p:last-child {
     margin-bottom: 0;
+}
+
+footer {
+    color: white;
 }
 
 @keyframes articleEnter {
